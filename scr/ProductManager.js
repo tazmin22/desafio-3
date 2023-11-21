@@ -1,4 +1,6 @@
+module.exports = { PManager: productManager }
 const fs = require("fs");
+
 
 class productManager {
   constructor(path) {
@@ -60,15 +62,15 @@ class productManager {
 };
 
 async function cosasAsincronicas() {
-  const usuariosManager = new productManager("pruebas.json");
-  await usuariosManager.addProducts("title", "description", "price", "thumbnail", "code", "stock");
-  await usuariosManager.addProducts("title", "description", "price", "thumbnail", "code", "stock");
-  await usuariosManager.addProducts("producto", "una buena descripcion", 123, "sin imagen", 3, 3);
-  await usuariosManager.deleteProduct(3);
+  //const usuariosManager = new productManager("pruebas.json");
+  //await usuariosManager.addProducts("title", "description", "price", "thumbnail", "code", "stock");
+ // await usuariosManager.addProducts("title", "description", "price", "thumbnail", "code", "stock");
+  //await usuariosManager.addProducts("producto", "una buena descripcion", 123, "sin imagen", 3, 3);
+  //await usuariosManager.deleteProduct(3);
 
-  const producto = await usuariosManager.updateProduct(1, "title", "probando un nuevo titulo"  );
-  const producto1 = await usuariosManager.updateProduct(1, "description", "probando una nueva descripcion" );
-  console.log(producto);
+  //const producto = await usuariosManager.updateProduct(1, "title", "probando un nuevo titulo"  );
+  //const producto1 = await usuariosManager.updateProduct(1, "description", "probando una nueva descripcion" );
+  //console.log(producto);
 }
 
 return cosasAsincronicas();
